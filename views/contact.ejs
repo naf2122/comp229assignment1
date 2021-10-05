@@ -1,0 +1,68 @@
+ <!--Nafees Hasan 301147626 Assignment 1 Portfolio 10/04/2021-->
+
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>  
+
+<!DOCTYPE html>
+<html>
+    <!--head section-->
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/content/app.css" />
+    </head>
+    <!--main content-->
+    <main>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>Send me your questions, comments and project related queries! </p>
+        <br />
+        <h3>Nafees Hasan </h3>
+        <p>Software Engineering Student. Future Web Developer. Football Fan</p>
+        <br />
+        <br />
+        <img alt="background" src="/assets/background.jpg" float="left" width="350" height="180"/>
+        <br />
+        <br />
+        <br />
+        <form method="post" action="index.php" role="form" class="form-horizontal"> 
+            <div class="form-group">
+                <label for="fname" >First Name</label>
+                <input name="fname" id="fname" >
+                <br />
+                <br />
+                <label for="lname" >Last Name</label>
+                <input name="lname" id="lname" >
+                <br />
+                <br />
+                <label for="phone" >Phone Number</label>
+                <input name="phone" id="phone" >
+                <br />
+                <br />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                      <input name="email" type="email" id="email" >
+                      <br />
+                      <br />
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                       <textarea name="message" id="message" placeholder="Question, comment or query.."></textarea>
+             </div>
+             <br />
+             <div class="form-group">
+                 <label>*What is 3+2? (So I know you aren't a robot)</label>
+                    <input name="human" >
+             </div>
+                <input id="submit" name="submit" type="submit" value="Submit" >
+        </form>
+        
+
+<%- include partials/footer.ejs %>
+
+</html>
+
+
+        

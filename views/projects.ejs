@@ -1,0 +1,42 @@
+ <!--Nafees Hasan 301147626 Assignment 1 Portfolio 10/04/2021-->
+
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %> 
+<!DOCTYPE html>
+<html>
+    <!--head section-->
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/content/app.css" />
+    </head>
+    <!--main content-->
+    <main>
+        <h1>
+            My Projects
+        </h1>
+        <br/>
+        <p>Some Projects I have been working on: </p>
+        <br />
+        <li>UberCarry - SRS Documentation</li>
+        <img alt="uber" src="/assets/uber.jpg" float="right" width="250" height="150"/>
+        <p>UberCarry is a mobile app similar to Uber which is used 
+            to request for pickup/dropoff services of large merchandise/ products. This 
+            project was part of COMP225 [Software Engineering Methodologies] course. 
+        </p>
+        <li>AirPost - SRS Documentation</li>
+        <img alt="drone" src="/assets/drone.jpg" float="right" width="250" height="150"/>
+        <p>AirPost is a software targetted on online orders with a drone-based delivery
+            system. The project is part of my COMP246 course [Sofware Systems Design].
+        </p>
+        <br />
+        <li>Java Exercise (Singers App)</li>
+        <img alt="singer" src="/assets/singer.jpg" float="right" width="250" height="150"/>
+        <p>This is an exercise to keep records of singers and displays stored records. It is 
+            a lab exercise of my COMP228 course [Java Programming].
+        </p>
+    </main>
+    
+
+<%- include partials/footer.ejs %>
+
+</html>
