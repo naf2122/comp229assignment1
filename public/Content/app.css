@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/Assets/images/bg.jpg");
 }
 
 a {
@@ -9,4 +10,11 @@ a {
 
 body {
   background-color: #fefbd8;
+  word-spacing: 0em;
 }
+
+p {
+  border: 1px solid powderblue;
+  padding: 20px;
+}
+
