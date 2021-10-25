@@ -1,0 +1,80 @@
+ <!--Nafees Hasan 301147626 Assignment 1 Portfolio 10/04/2021-->
+
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>  
+
+<!DOCTYPE html>
+<html>
+    <!--head section-->
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/content/app.css" />
+    </head>
+    <!--main content-->
+    <main>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>Send me your questions, comments and project related queries! </p>
+        <br />
+        <h3>Nafees Hasan </h3>
+        <p>Software Engineering Student. Future Web Developer. Football Fan</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <form name="survey" id="survey" action="nhasan13@my.centennialcollege.ca" method="post"> 
+            <table cellpadding="15" cellspacing="5" width="65%">
+                <!-- first Row -->
+                <tr>
+                  <td>
+                  <label><b>First Name: </b></label><br/>
+                  <input type="text" name="firstname" id="firstname" size="30"> </input>
+                  </td>
+                </tr>
+                <!-- second Row -->
+                <tr>
+                  <td>
+                  <label><b>Last Name: </b></label><br/>
+                  <input type="text" name="lastname" id="lastname" size="30"> </input>
+                  </td>
+                </tr>
+                <!-- third Row -->
+                <tr>
+                  <td>
+                  <label><b>Contact Number: </b></label><br/>
+                  <input type="text" name="contactnumber" id="contactnumber" size="40"> </input>
+                  </td>
+                </tr>
+                <!-- fourth Row -->
+                <tr>
+                  <td>
+                    <label><b>Email Address: </b></label><br/>
+                    <input type="text" name="email" id="email" size="40"> </input>
+                  </td>
+                </tr>
+                <!-- fifth Row -->
+                <tr>
+                    <td>
+                        <label><b>*What is 3+2? (So I know you aren't a robot)</b></label>
+                        <input name="human" >
+                    </td>
+                </tr>
+                <!-- Submit Button -->
+                <tr>
+                    <td>
+                        <input id="submit" name="submit" type="submit" value="Submit" >
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+        
+ </html>
+<%- include partials/footer.ejs %>
+
+
+
+
+        

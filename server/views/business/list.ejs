@@ -1,0 +1,65 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+   <!-- main content -->
+   <main>
+    <h1>
+      Table
+    </h1>
+    <% if(typeof displayName == 'string' && displayName) {%>
+    <a href="/business-list/add" class="button" role="button">
+      Add
+    </a>
+    <% } %>
+    <fieldset>
+    <main class="container">
+      <table>
+        <!--Header Row-->
+        <tr>
+          <th class="text-center">Name</th>
+          <th class="text-center">Email</th>
+          <th class="text-center">Number</th>
+          <% if(typeof displayName == 'string' && displayName) {%>
+          <th class="text-center"> </th>
+          <th class="text-center"> </th>
+          <% } %>
+        </tr>
+        <!--rep template row-->
+                 
+        <% for(let count = 0; count < BusinessList.length; count++) { %>
+          <tr>
+            <td class="text-center"><%= BusinessList[count].name %> </td>
+            <td class="text-center"><%= BusinessList[count].email %> </td>
+            <!-- <td class="text-center"><%= BusinessList[count].published %> </td>
+            <td class="text-center"><%= BusinessList[count].description %> </td> -->
+            <td class="text-center"><%= BusinessList[count].number %> </td>
+            <td class="text-center"> 
+              <a href="/business-list/edit/<%= BusinessList[count]._id %>" class="button">
+                Edit
+              </a>
+            </td>
+            <td class="text-center"> 
+              <a href="/business-list/delete/<%= BusinessList[count]._id %>" class="button-danger">
+                Delete
+              </a>
+              
+            </td>
+          </tr>
+        <% } %>
+      </table>
+    </main>
+  </fieldset>
+</main>
+  
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
+  
+
+
+
+
+
