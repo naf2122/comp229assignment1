@@ -25,8 +25,8 @@
     "popper.js": "^1.16.1",
     "save": "^2.4.0"
   },
-  "description": "demo app for assignment1",
-  "main": "index.js",
+  "description": "demo app for assignment2",
+  "main": "server.js",
   "devDependencies": {
     "@types/connect-flash": "0.0.37",
     "@types/express": "^4.17.13",
@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naf2122/assignment1.git"
+    "url": "git+https://github.com/naf2122/comp229assignment2.git"
   },
   "author": "Nafees",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/naf2122/assignment1/issues"
+    "url": "https://github.com/naf2122/comp229assignment2/issues"
   },
-  "homepage": "https://github.com/naf2122/assignment1#readme"
+  "homepage": "https://github.com/naf2122/comp229assignment2#readme"
 }
